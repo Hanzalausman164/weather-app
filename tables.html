@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sideContainer">
+        <img src="Images/logo.png" alt="Logo" class="logo" />
+        <nav>
+          <ul class="sidebar">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="#">Tables</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="mainContainer">
+        <div>
+          <input type="text" placeholder="Enter your location" class="search" />
+        </div>
+        <div class="maindiv">
+          <!-- Weather Forecast Section -->
+          <div class="tablesContainer">
+            <div class="blocks weather-block">
+              <div class="day">Saturday</div>
+              <div class="forecast">
+                <span class="temp-range">10°C / 12°C</span>
+                <img src="Images/cloudy.png" alt="cloudy" class="weather-icon-small" />
+              </div>
+            </div>
+            <div class="blocks weather-block">
+              <div class="day">Sunday</div>
+              <div class="forecast">
+                <span class="temp-range">7°C / 13°C</span>
+                <img src="Images/cloudy.png" alt="cloudy" class="weather-icon-small" />
+              </div>
+            </div>
+            <div class="blocks weather-block">
+              <div class="day">Monday</div>
+              <div class="forecast">
+                <span class="temp-range">3°C / 9°C</span>
+                <img src="Images/rain.png" alt="rainy" class="weather-icon-small" />
+              </div>
+            </div>
+            <div class="blocks weather-block">
+              <div class="day">Tuesday</div>
+              <div class="forecast">
+                <span class="temp-range">1°C / 8°C</span>
+                <img src="Images/snow.png" alt="snowy" class="weather-icon-small" />
+              </div>
+            </div>
+            <div class="blocks weather-block">
+              <div class="day">Wednesday</div>
+              <div class="forecast">
+                <span class="temp-range">5°C / 11°C</span>
+                <img src="Images/cloudy.png" alt="cloudy" class="weather-icon-small" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat UI Section -->
+          <div class="gemini">
+            <div class="chat-display" id="chat-display">
+              <!-- Messages will appear here -->
+            </div>
+            <div class="chat-input">
+              <input type="text" id="messageInput" placeholder="Type a message..." />
+              <button id="sendBtn">Send</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

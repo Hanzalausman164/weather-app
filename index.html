@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sideContainer">
+        <img src="Images/logo.png" alt="Logo" class="logo" />
+        <nav>
+          <ul class="sidebar">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="tables.html">Tables</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="rightContainer">
+        <div class="weatherContainer">
+          <div>
+            <input
+              type="text"
+              placeholder="Enter your location"
+              class="search"
+            />
+          </div>
+          <div class="underSearch">
+            <div class="upperDetails">
+              <h3 class="city">New York</h3>
+              <img
+                src="Images/rain.png"
+                alt="Weather Icon"
+                class="weather-icon"
+              />
+            </div>
+            <div class="temp-forecast">
+              <div class="date">
+                <h3 id="date">Saturday, 11 Oct</h3>
+              </div>
+              <div class="temp-f">
+                <h2 class="temp">22°C</h2>
+                <h4 class="forecast">Cloudy</h4>
+              </div>
+            </div>
+            <div class="details">
+              <div class="detail-item">
+                <img src="Images/humidity.png" alt="Humidity Icon" />
+                <div>
+                  <p class="label">Humidity</p>
+                  <p class="humidity">50%</p>
+                  
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <img src="Images/wind.png" alt="Wind Icon" />
+                <div>
+                  <p class="label">Wind</p>
+                  <p class="wind">15 km/h</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="charts">
+          <div class="BarChart">
+            <canvas id="bar" width="300" height="300"></canvas>
+          </div>
+          <div class="doughnutChart">
+            <canvas id="doughnut"width="300" height="300"></canvas>
+          </div>
+          <div class="LineChart">
+            <canvas id="line" width="300" height="300"></canvas>
+          </div>
+        </div>
+        <img src="Images/user.png" alt="User" class="userimg" />
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
